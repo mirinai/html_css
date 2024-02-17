@@ -1,0 +1,91 @@
+div, textarea{
+  border: 1px solid yellowgreen;
+  width:400px;
+  
+
+}
+ul {
+  list-style-type: square; /* 네모로 스타일링 */
+}
+
+/* 순서가 있는 리스트를 로마자로 된 숫자로 스타일링 */
+ol {
+  list-style-type: upper-roman; /* 로마자로 된 숫자로 스타일링 */
+}
+.nav {
+  background: purple;
+}
+
+
+.nav li{/*.nav li는 클래스가 "nav"인 <ul> 요소의 자식인 
+  <li> 요소들을 선택하는 CSS 규칙*/
+  /*list-style-type: disc;  목록의 스타일을 점으로 설정 */
+  display:inline-block;
+  width: 70px;
+  border: red;
+  text-align: center;
+  padding: 10px;
+  background: violet;
+  border-radius:10px;
+  
+
+}
+a,
+a:link,
+a:visited,
+a:active,
+a:focus
+{
+  text-decoration: none;
+  color:blue;
+  font-size: 16px;
+}
+a:hover{
+  text-decoration: none;
+  color:green;
+  font-size: 16px;
+}
+.nav li:before {
+  content: "•"; /* 링크 앞에 원형 점 추가 */
+  margin-right: 5px; /* 링크와 점 사이의 간격 설정 */
+  
+}
+.back_img{
+  background-image: url(../img/flower1.webp);
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.img-title {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+.img-contents{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.img-button{
+  /*margin-left: auto;
+  margin-right: auto;*/
+  /*margin-left: 200px;
+  margin-top:50px;*/
+  position: absolute;/* 
+  position: relative  [원래 위치를 기준으로 이동]
+  position: absolute  [부모를 기준으로 이동]
+  position: 
+  
+  */
+  left:150px;
+  top:200px;
+
+
+}
+.title2{
+  color: white;
+  font-size: 20px;
+  
+}
