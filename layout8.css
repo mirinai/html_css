@@ -1,121 +1,113 @@
-body{
-  margin:0;
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iru'm</title>
+  <link rel="stylesheet" href="css/layout8.css">
+  <!--상대경로 : 파일이름/@@@.css-->
+</head>
+<body>
+  <div>
+    <h3>소제목1</h3>
+    <p>본문글1</p>
+  </div>
+  <div style="float:left"><!-- 왼쪽에 띄어라 -->
+    <h3>소제목2</h3>
+    <p>본문글2</p>
+  </div>
+  <div style="float:left">
+    <h3>소제목3</h3>
+    <p>본문글3</p>
+  </div>
+  <div style="clear:both"></div><!-- 전에 떠 있던(float된) 요소들의 
+    영향을 제거하고, 다음에 오는 내용이 이 <div> 아래로 
+      흐를 수 있도록 합니다. 
+      이렇게 함으로써 부모 요소가 자식 요소들의 높이를 제대로 감지하고 
+      적절하게 배치될 수 있도록 합니다. -->
+  <div>
+    <h3>소제목4</h3>
+    <p>본문글4</p>
+    <button>버튼</button>
+    <br>
+    <hr><!-- 수평선(horizontal rule)을 나타내는 태그
+              문단이나 섹션 등의 구획을 나누거나 강조할 때 
+              가로로 굵은 선을 추가할 수 있음
+    -->
+    <a href="https://www.naver.com"><img src="img/house.jpg" width="100px;" height = "100px;"></a>
+  </div>
+  <div>
+    <h4>순서 없는 리스트</h4>
+    <ul>
+      <li>첫번째</li>
+      <li>두번째</li>
+      <li>세번째</li>
+      <li>네번째</li>
+    </ul>
+    <h4>순서가 있는 리스트</h4>
+    <ol>
+      
+      <li>첫번째</li>
+      <li>두번째</li>
+      <li>세번째</li>
+      <li>네번째</li>
+    </ol>
+  </div>
+  <div>
+    <ul class="nav">
+      <li><a href="https://www.naver.com/">naver</a></li>
+      <li id="sign"><a href="./input_layout.html">input_layout</a></li>
+      <li><a href="#">3rd</a></li>
+      <li><a href="#">4th</a></li>
+    </ul>
 
-}
-div, textarea{
-  border: 1px solid yellowgreen;
-  box-sizing: border-box;
-  
+  </div>
+  <div class="back_img">
+    <h3 class="img-title">Meet the flower</h3>
+    <p class="img-contents">Moments</p>
+    <button class="img-button">자세히 보기</button>
+  </div>
+  <div class="input-class">
+    <form>
+      <input type="text"
+      placeholder="여기에 입력">
+      <input type="password">
+      <input type="number">
+      <input type="number" value="111">
+      <input type="email" placeholder="example@example.com">
+      <input type="date">
+      <br>
+      <input type="checkbox" id="chk1">
+      <label>are you aree?</label>
+      <br>
+      <input type="radio" name="bundle" id="content1">
+      <label>1st</label>
+      <br>
+      <input type="radio" name="bundle" id="content2">
+      <label>2nd</label>
+      <br>
+      <input type="radio" name="bundle" id="content3">
+      <label>3rd</label>
+      <br>
+      <textarea></textarea>
+      <input type="submit" value="회원가입">
+      <input type="button" value="뒤로가기">
+    </form><!--input은 form이 있어야 함-->
+  </div>
+  <div class="component-table">
+    <table class="my-table"><!-- 표 : table/tr(table row)/td(table ) -->
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td colspan="2">4</td>
+        <td>5</td>
+        
+      </tr>
+    </table>
 
-}
-ul {
-  list-style-type: square; /* 네모로 스타일링 */
-}
-
-/* 순서가 있는 리스트를 로마자로 된 숫자로 스타일링 */
-ol {
-  list-style-type: upper-roman; /* 로마자로 된 숫자로 스타일링 */
-}
-.nav {
-  background: purple;
-}
-
-
-.nav li{/*.nav li는 클래스가 "nav"인 <ul> 요소의 자식인 
-  <li> 요소들을 선택하는 CSS 규칙*/
-  /*list-style-type: disc;  목록의 스타일을 점으로 설정 */
-  display:inline-block;
-  width: 70px;
-  border: red;
-  text-align: center;
-  padding: 10px;
-  background: violet;
-  border-radius:10px;
-  
-
-}
-a,
-a:link,
-a:visited,
-a:active,
-a:focus
-{
-  text-decoration: none;
-  color:blue;
-  font-size: 16px;
-}
-a:hover{
-  text-decoration: none;
-  color:green;
-  font-size: 16px;
-}
-.nav li:before {
-  content: "•"; /* 링크 앞에 원형 점 추가 */
-  margin-right: 5px; /* 링크와 점 사이의 간격 설정 */
-  
-}
-.back_img{
-  background-image: url(../img/flower1.webp);
-  width: 400px;
-  height: 400px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.img-title {
-  color: white;
-  font-size: 24px;
-  text-align: center;
-}
-.img-contents{
-  color: white;
-  font-size: 20px;
-  text-align: center;
-}
-.img-button{
-  /*margin-left: auto;
-  margin-right: auto;*/
-  /*margin-left: 200px;
-  margin-top:50px;*/
-  position: absolute;/* 
-  position: relative  [원래 위치를 기준으로 이동]
-  position: absolute  [부모를 기준으로 이동]
-  position: 
-  
-  */
-  left:150px;
-  top:200px;
-
-
-}
-.title2{
-  color: white;
-  font-size: 20px;
-  
-}
-.input-class{
-  width:200px;
-
-}
-.input-class input{
-  
-  box-sizing: border-box;
-}
-.input-class input[type=text],
-.input-class input[type=number]{
-  width:100%;
-  padding: 15px;
-  font-size: 20px;
-  border:2px solid purple;
-  border-radius: 15px;
-}
-.my-table{
-  border-collapse: collapse;
-
-  
-}
-.my-table tr td{
-  border: 1px solid black;
-  width:200px;
-
-}
+  </div>
+</body>
+</html>
