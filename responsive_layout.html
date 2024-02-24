@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>리스펀시브 레이아웃</title>
+</head>
+<style>
+  .test-responsive{
+    font-size: 30px;
+    background: lightgrey;
+  }
+  /*스크린 크기가 줄어들면 폰트 사이즈를 바꾼다.*/
+  /*css는 밑에 있는 코드가 적용되는 법칙 : media query는 밑에 위치*/
+  @media screen and (max-width:1200px) {
+    /*스크린이 1200px 보다 작거나 같을 때 적용함*/
+    /*화면이 1200px이하일때 적용될 style(태블릿*/
+    .test-responsive{
+      font-size: 24px;
+      background-color: purple;
+    }
+  }
+  @media screen and (max-width:768px){
+  /*모바일 - 화면이 768px 이하일때 적용되는 style*/
+    .test-responsive{
+      font-size: 16px;
+      background-color: yellow;
+    }
+  }
+</style>
+<body>
+  <!--
+    반응형 : 웹 크기에 따라 UI가 바뀜
+  -->
+  <div class="test-responsive">
+    <p>hello hello hello hello hello hello hello hello hello hello hello hello</p>
+  </div>
+</body>
+</html>

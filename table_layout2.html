@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .component-button button{
+      width: 100%;
+      height: 40px;
+      color: aquamarine;
+      background-color: blue;
+    }
+    .component-button div{
+      float:left;
+      width:50%;
+      
+    }
+    .component-button{
+      width:800px;
+      margin-left: 10%;
+      
+    }
+    .table-component td{
+      border-bottom: 1px solid black;
+      border-left: 1px dashed black;
+      margin:0px;
+      font-size: 20px;
+    }
+    .table-component{
+      width:100%;
+      margin-left: 10%;
+    }
+   
+    .table-component img{
+      width:50px;
+      height: 50px;
+
+    }
+  
+
+  </style>
+</head>
+<body>
+  <h3 style="margin-left: 10%;">※장바구니</h3>
+  <div class="component-button">
+    <div><button>일반구매</button></div>
+    <div><button>정기구매</button></div>
+  </div>
+  <div style="clear:both;"></div>
+  <div class="table-component">
+    <table>
+      <tr>
+        <td><input type="checkbox">전체선택</td>
+        <td>상품정보</td>
+        <td>상품금액</td>
+        <td>배송비</td>
+        <td>모든 값</td>
+      </tr>
+      <tr>
+        <td colspan="5"><img src="안드로메다은하.jpg"><a>1st</a></td>
+      <tr>
+        <td colspan="5"><img src="안드로메다은하.jpg"><a>1st</a></td>
+      <tr>
+        <td colspan="5"><img src="안드로메다은하.jpg"><a>1st</a></td>
+      <tr>
+        <td colspan="5"><img src="안드로메다은하.jpg"><a>1st</a></td>
+      </tr></table>
+      <tr>
+        <td id="total-value"><a>모든 가격 : </a></td>
+      </tr>
+    </table>
+    
+  </div>
+ 
+</body>
+</html>

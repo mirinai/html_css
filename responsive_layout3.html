@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .img-box{
+      background-image: url(안드로메다은하.jpg);
+      width:40%;
+      height: 40vh;/*보이는 화면 높이의 40%*/
+      background-repeat: no-repeat;/*크기가 부족해도 되풀이 안됨*/
+      /*background-position: 50% 50%; /* 이미지를 가운데에 정렬 */
+      background-position: center;/*이미지를 가운데에 붙여 그림*/
+      background-size: cover;/*이미지 꽉참*/
+    
+    }
+    .flex-box{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;/*flex 가운데 정렬*/
+      justify-content: center;/*flex 가운데 정렬*/
+    }
+    @media screen and (max-width:1200px) {
+      .img-box{
+        
+        width:50%;
+        
+      
+    }
+  }
+  /*img-box: 이 클래스는 이미지를 포함한 박스를 나타냅니다. 
+  주로 배경 이미지를 설정하고 그 이미지를 화면에 표시합니다. 
+  해당 클래스에는 이미지 관련 CSS 속성들이 정의되어 있습니다. 
+  화면에 표시될 이미지를 설정하고, 크기 및 위치 등을 지정하여 
+  이미지가 화면에 어떻게 나타날지를 제어합니다.
+
+  flex-box: 이 클래스는 Flexbox 레이아웃을 구현하기 위한 것입니다. 
+  Flexbox는 요소를 유연하게 배치하고 정렬하기 위한 CSS 레이아웃 모델입니다. 
+  해당 클래스에는 Flexbox를 설정하기 위한 CSS 속성들이 정의되어 있습니다. 
+  주로 요소들을 가로 또는 세로로 정렬하고, 간격을 조절하며, 
+  요소들을 가운데 정렬하는 등의 역할을 수행합니다.
+
+  따라서 img-box는 이미지를 담는 박스를 스타일링하고, 
+  flex-box는 Flexbox를 사용하여 요소들을 배치하고 정렬합니다.*/
+    @media screen and (max-width:768px) {
+      .img-box{
+      
+        width:100%;
+
+      }
+      
+    }
+  </style>
+</head>
+<body>
+  <!-- div 백그라운드 이미지 : 웹에서는 한 라인에 2개씩, 모바일에서는 1개씩-->
+  <div class="flex-box">
+    <div class="img-box">
+    </div>
+    <div class="img-box">
+    </div>
+  </div>
+</body>
+</html>

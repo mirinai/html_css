@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테이블 example</title>
+  <style>
+   
+    body{
+      margin:0;
+      
+    }
+    .component-table{
+      background: plum;
+      padding: 30px;
+      width:700px;
+      margin:auto; /* 박스를 가운데로 둠*/
+    }
+    .component-table h3{
+      margin:0;
+    }
+    .cart-table{
+      border-collapse: collapse;
+      border: 1px solid black;
+      width: 100%;/*컴포넌트 테이블만큼 너비를 늘림*/
+
+    }
+    .cart-table img{
+      width:80px;
+      height: 80px;
+    }
+    .cart-table th{
+      border-bottom: 1px solid black;
+    }
+    .cart-table td{
+      text-align: center;
+      padding:15px;
+      border-bottom: 1px solid black;
+    }
+    .cart-table .total-td{
+      text-align: left;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="component-table">
+    <h3>장바구니</h3>
+    <table class="cart-table">
+      <tr>
+        <th>이미지</th>
+        <th>상품이름</th>
+        <th>수량</th>
+        <th>값</th>
+        <th>모든 값</th>
+      </tr>
+      <tr>
+        <td><img src="안드로메다은하.jpg" alt="..."></td>
+        <td>상품1</td>
+        <td>20</td>
+        <td>4000</td>
+        <td>80000</td>
+      </tr>
+      <tr>
+        <td><img src="앒바람개비미리내.webp" alt="..."></td>
+        <td>상품2</td>
+        <td>2</td>
+        <td>6000</td>
+        <td>12000</td>
+      </tr>
+      <tr>
+        <td><img src="우리은하.jpg" alt="..."></td>
+        <td>상품3</td>
+        <td>4</td>
+        <td>2000</td>
+        <td>8000</td>
+      </tr>
+      <tr>
+        
+        <td colspan="5" class="total-td">모든 값 : 00000원</td>
+      </tr>
+    </table>
+  </div>
+  <div>
+
+  </div>
+  <div>
+
+  </div>
+  
+</body>
+</html>

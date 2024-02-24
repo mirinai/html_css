@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>복습5</title>
+  <style>
+    .my-nav li{
+      display: inline-block;
+      width:80px;
+      text-align: center;
+
+    }
+    .my-nav a,
+    .my-nave a:link,
+    .my-nav a:hover,
+    .my-nav a:active,
+    .my-nav a:focus
+    {
+      text-decoration: none;
+      color: greenyellow;
+
+    }
+    .my-table{
+      
+    }
+    .my-table td{
+      border:1px solid black;
+      padding:8px;
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 네비게이션 바 -->
+  <div class="top-header">
+    <ul class="my-nav">
+      <li><a href="#">1st</a></li>
+      <li><a href="#">2nd</a></li>
+      <li><a href="#">3rd</a></li>
+      <li><a href="#">4th</a></li>
+    </ul>
+
+  </div>
+  <!-- 테이블-> table/tr/td -->
+  <div class="component-table">
+    <table class="my-table" style="border-collapse: collapse;">
+      <tr>
+        <td>1st</td>
+        <td>2nd</td>
+        <td>3rd</td>
+        <td>4th</td>
+      </tr>
+      <tr>
+        <td>1st</td>
+        <td>2nd</td>
+        <td>3rd</td>
+        <td>4th</td>
+      </tr>
+      <tr>
+        <td>1st</td>
+        <td>2nd</td>
+        <td colspan="2">3rd</td>
+      </tr> 
+    </table>
+  </div>
+</body>
+</html>
