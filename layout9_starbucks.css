@@ -35,6 +35,8 @@
 .top-nav{
   height: 45px;
   font-size: 13px;
+  display: flex;
+  justify-content: flex-end;
 }
 .top-nav a{
   color:black;
