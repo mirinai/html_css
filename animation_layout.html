@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>애니메이션</title>
+  <style>
+    .box{
+      position: relative;
+      background: yellowgreen;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+    }
+    .box:hover .text{
+      background-color: green;
+      opacity: 1;
+      top: 40%;
+    }
+    .text{
+      position: absolute;/*relative인 부모위치를 기준으로 잡음*/
+      left: 20%;
+      top:70%;
+      margin: 0;
+      opacity:0.5;/*투명도(0~1)*/
+      transition: all 500ms;/*바뀌는데 시간 걸림*/
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    Hello World!
+    <p class="text">Nice to meet you</p>
+  </div>
+</body>
+</html>
